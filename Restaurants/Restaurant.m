@@ -11,7 +11,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        name = @"Congee Bowery";
+        name = @"Kenka";
+        cuisine = @"Japanese";
         address = @"207 Bowery\nNew York, NY 10002";
     }
     return self;
