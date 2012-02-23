@@ -12,7 +12,7 @@
     NSString* cuisineType;
     NSString* phone;
     NSString* shortReview;
-    //NSString* restAge;
+    NSString* restAge;
     
     
 }
@@ -21,6 +21,6 @@
 @property(readwrite, strong) NSString* name;
 @property(readwrite, strong) NSString* phone;
 @property(readwrite, strong) NSString* shortReview;
-//@property(readwrite, strong) NSString* name;
+@property(readwrite, strong) NSString* restAge;
 
 @end

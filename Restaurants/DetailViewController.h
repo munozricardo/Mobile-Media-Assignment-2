@@ -18,6 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *cuisineLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
 @property (weak, nonatomic) IBOutlet UILabel *review;
-@property (weak, nonatomic) IBOutlet UILabel *yearOpened;
+@property (weak, nonatomic) IBOutlet UILabel *yearOpen;
 
 @end

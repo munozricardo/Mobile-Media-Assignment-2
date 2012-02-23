@@ -12,7 +12,7 @@
 @synthesize cuisineLabel;
 @synthesize phoneNumber;
 @synthesize review;
-@synthesize yearOpened;
+@synthesize yearOpen;
 
 #pragma mark - View lifecycle
 
@@ -26,7 +26,7 @@
     cuisineLabel.text = [restaurant cuisineType];
     phoneNumber.text = [restaurant phone];
     review.text = [restaurant shortReview];
-    //yearOpened = [restaurant restAge];
+    yearOpen.text = [restaurant restAge];
 }
 
 - (void)viewDidUnload
@@ -36,7 +36,7 @@
     [self setCuisineLabel:nil];
     [self setPhoneNumber:nil];
     [self setReview:nil];
-    [self setYearOpened:nil];
+    [self setYearOpen:nil];
     [self setPhoneNumber:nil];
     [super viewDidUnload];
 }
