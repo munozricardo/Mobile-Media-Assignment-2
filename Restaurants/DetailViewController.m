@@ -24,6 +24,9 @@
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
+    phoneNumber.text = [restaurant phone];
+    review.text = [restaurant shortReview];
+    //yearOpened = [restaurant restAge];
 }
 
 - (void)viewDidUnload
@@ -34,6 +37,7 @@
     [self setPhoneNumber:nil];
     [self setReview:nil];
     [self setYearOpened:nil];
+    [self setPhoneNumber:nil];
     [super viewDidUnload];
 }
 

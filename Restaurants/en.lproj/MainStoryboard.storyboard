@@ -73,11 +73,11 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Address will go here" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="27">
-                                <rect key="frame" x="20" y="77" width="280" height="83"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Address will go here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="27">
+                                <rect key="frame" x="50" y="54" width="221" height="83"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -85,26 +85,26 @@
                                 <rect key="frame" x="20" y="13" width="280" height="33"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="phoneNumber" lineBreakMode="tailTruncation" minimumFontSize="10" id="nXo-z9-exT">
-                                <rect key="frame" x="101" y="159" width="118" height="35"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="phoneNumber" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="nXo-z9-exT">
+                                <rect key="frame" x="101" y="136" width="118" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Review" lineBreakMode="tailTruncation" minimumFontSize="10" id="Fam-eo-6up">
-                                <rect key="frame" x="47" y="236" width="186" height="101"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Review" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" minimumFontSize="10" enabled="NO" id="Fam-eo-6up">
+                                <rect key="frame" x="67" y="179" width="187" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="year opened" lineBreakMode="tailTruncation" minimumFontSize="10" id="tqX-np-AYq">
-                                <rect key="frame" x="101" y="364" width="95" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="year opened" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="tqX-np-AYq">
+                                <rect key="frame" x="113" y="363" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -118,15 +118,31 @@
                         <outlet property="addressLabel" destination="27" id="dDR-xF-TZ5"/>
                         <outlet property="cuisineLabel" destination="PbC-R4-mhe" id="gWD-Kf-lAK"/>
                         <outlet property="navigationHeader" destination="26" id="KJk-AP-LeQ"/>
-                        <outlet property="phoneNumber" destination="nXo-z9-exT" id="yW1-bY-dtK"/>
+                        <outlet property="phoneNumber" destination="nXo-z9-exT" id="SZi-oP-q9u"/>
                         <outlet property="review" destination="Fam-eo-6up" id="G3C-rp-BMD"/>
                         <outlet property="yearOpened" destination="tqX-np-AYq" id="NAn-hJ-Rdc"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="924" y="64"/>
+            <point key="canvasLocation" x="1079" y="64"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addressLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cuisineLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="navigationHeader" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="phoneNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="review" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yearOpened" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
