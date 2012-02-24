@@ -13,6 +13,8 @@
     NSString* phone;
     NSString* shortReview;
     NSString* restAge;
+    int restaurantAge;
+    int yearOpened;
     
     
 }
@@ -22,5 +24,9 @@
 @property(readwrite, strong) NSString* phone;
 @property(readwrite, strong) NSString* shortReview;
 @property(readwrite, strong) NSString* restAge;
+@property int yearOpened;
+@property int currentYear;
+@property int restaurantAge;
+
 
 @end
