@@ -120,7 +120,7 @@
                         <outlet property="navigationHeader" destination="26" id="KJk-AP-LeQ"/>
                         <outlet property="phoneNumber" destination="nXo-z9-exT" id="SZi-oP-q9u"/>
                         <outlet property="review" destination="Fam-eo-6up" id="G3C-rp-BMD"/>
-                        <outlet property="yearOpened" destination="tqX-np-AYq" id="NAn-hJ-Rdc"/>
+                        <outlet property="yearOpen" destination="tqX-np-AYq" id="wXv-ar-e0Z"/>
                     </connections>
                 </viewController>
             </objects>
@@ -136,7 +136,7 @@
                 <relationship kind="outlet" name="navigationHeader" candidateClass="UINavigationItem"/>
                 <relationship kind="outlet" name="phoneNumber" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="review" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="yearOpened" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yearOpen" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MasterViewController" superclassName="UITableViewController">

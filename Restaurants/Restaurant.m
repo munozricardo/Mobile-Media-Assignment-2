@@ -13,8 +13,10 @@
 
 @synthesize address, name, cuisineType, phone, shortReview, restAge, yearOpened, currentYear, restaurantAge;
 
--(int) age
-{
+
+
+- (id)init {
+    
     yearOpened = 2004;
     currentYear = 2012;
     
@@ -23,12 +25,8 @@
     
     //calculations
     restaurantAge = currentYear - yearOpened;
+ 
     
-    return restaurantAge;
-    
-}
-
-- (id)init {
     self = [super init];
     if (self) {
         name = @"Kenka";
